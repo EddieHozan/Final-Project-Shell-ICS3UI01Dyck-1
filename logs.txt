@@ -7,4 +7,9 @@ March 29th
 22:30 - Andy - finished Cart.java, reworked Inventory.java
 -----------------------------------------------------------------
 March 30th
-9:30 - 13:00 - group finished cart, cashier, and inventory, working on Main framework + debugging all 4 classes
+9:30 - 13:00 - group finished cart, cashier, and inventory, working on Main framework + debugging all 4 classes (Andy - reworked Cashier.java)
+13:00 - 2:19 - Andy - fixed some errors in Receipt.java, continued work on Main.java
+-----------------------------------------------------------------
+March 31st
+2:10 - 2:40 - Andy - fiddled with output of receipt; work will continue later
+11:00 - 12:00 - Andy - redid receipt output

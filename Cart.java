@@ -7,7 +7,6 @@ public class Cart {
     HashMap<String, Integer> cart = new HashMap<String, Integer>();
     Inventory inventory = new Inventory();
 
-
     void add(String item, int amount) {
         cart.put(item, amount);
         inventory.addToCart(item, amount);
@@ -55,15 +54,12 @@ public class Cart {
             System.out.println(Integer.toString(cart.get(key)) + " " + key);
         }
     }
-    
+
     public int itemsInCart() {
         int itemsInCart = 0;
-        for(String key : cart.keySet()) {
+        for (String key : cart.keySet()) {
             itemsInCart += cart.get(key);
         }
         return itemsInCart;
     }
-
-    
-
 }
