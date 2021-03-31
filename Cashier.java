@@ -44,9 +44,12 @@ public class Cashier {
                     if (nItemQuantity > nAvailStock) {
                     System.out.format(
                             "There is not enough of that item in stock! Please enter a number less than or equal to %d:\n", nAvailStock);     
+                    }
+                    else if(nItemQuantity == 0){
+                      System.out.println("Please enter a quantity greater than zero!\n");
                     } 
                     else {
-                        System.out.format("Added %d of %s to your cart!\n", nItemQuantity,     sItemChoice);
+                        System.out.format("Added %d of %s to your cart!\n", nItemQuantity, sItemChoice);
                         cart.add(sItemChoice, nItemQuantity);
                         return 1;
                     }
@@ -68,12 +71,14 @@ public class Cashier {
         while(true) {
             System.out.print("Which item do you want to remove?\n");
             String sRemove = scan.nextLine();
+            System.out.println();
 
             if (cart.isInCart(sRemove)) {
                 System.out.format("How much of this item would you like to remove? You have %d in your cart.\n", cart.qtyInCart(sRemove));
                 while(true) {
                     if(scan.hasNextInt()) {
                         int nRemoveQuantity = Math.abs(Integer.parseInt(scan.nextLine()));
+                        System.out.println();
                         if(nRemoveQuantity <= cart.qtyInCart(sRemove)) {    
                             cart.takeFromCart(sRemove, nRemoveQuantity);
                             System.out.format("Removed %d of %s from your cart! You now have %d in your cart.\n", nRemoveQuantity, sRemove, cart.qtyInCart(sRemove));
@@ -101,6 +106,7 @@ public class Cashier {
     }
 
     void itemTotalPrice(String item) {
+        System.out.println();
         if(cart.isInCart(item)) {
             System.out.format("The price of all %d of %s in your cart is $%.2f.\n", cart.qtyInCart(item), item, cart.itemPrice(item));
         }

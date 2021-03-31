@@ -24,38 +24,45 @@ class Main {
             }
 
             while(true) {
+                System.out.println();
                 System.out.println("Please choose from the following actions: 'buy', 'return', 'check cart', or 'checkout'.\n"); 
                 String sBuyOrReturn = scan.nextLine();
                 if(sBuyOrReturn.equalsIgnoreCase("buy")) {
                     cashier.buy();
                 }
                 else if(sBuyOrReturn.equalsIgnoreCase("return")) {
+                    System.out.println();
                     cashier.remove();
                 }
                 else if(sBuyOrReturn.equalsIgnoreCase("check cart")) {
                     while(true) {
-                        System.out.println("Please choose from the following options:\n" +  "1. Check the price of all items in your cart combined.\n" +
+                        System.out.println("Please choose from the following options:\n" + "-----------------------------------------\n" +
+                        "1. Check the price of all items in your cart combined.\n" +
                         "2. Check the combined price of one item in your cart.\n" + 
-                        "3. Check the unit price of one item in your cart.\n" + 
+                        "3. Check the unit price of an item.\n" + 
                         "4. List the items in your cart.\n" + 
                         "5. Go back to choose a different action.\n"); 
                         if(scan.hasNextInt()) {
                             int userChoice = Integer.parseInt(scan.nextLine());
                             if(userChoice == 1) {
+                                System.out.println();
                                 cashier.currentPrice();
                                 break;
                             }
                             if(userChoice == 2) {
+                                System.out.println();
                                 System.out.println("Please input which item you would like to check:\n");
                                 cashier.itemTotalPrice(scan.nextLine());
                                 break;
                             }
                             if(userChoice == 3) {
+                                System.out.println();
                                 System.out.println("Please input which item you would like to check the unit price to:\n");
                                 cashier.unitPrice(scan.nextLine());
                                 break;
                             }
                             if(userChoice == 4) {
+                                System.out.println();
                                 cashier.printCart();
                                 break;
                             }
@@ -68,7 +75,7 @@ class Main {
                         }
                         else {
                             String eatInput = scan.nextLine();
-                            System.out.println("Please input integer option from 1-5 next time.\n");
+                            System.out.printf("Does '%s' LOOK like an integer to you???\n",eatInput);
                         }
                     }
                 }
