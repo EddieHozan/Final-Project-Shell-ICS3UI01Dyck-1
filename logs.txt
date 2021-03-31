@@ -1,0 +1,10 @@
+-----------------------------------------------------------------
+March 29th
+10:12 - group decided on doing a department store
+10:29 - final decision made, brainstorming 
+11:05 - classes decided and assigned to each member
+11:09 - Work begins on each of the classes
+22:30 - Andy - finished Cart.java, reworked Inventory.java
+-----------------------------------------------------------------
+March 30th
+9:30 - 13:00 - group finished cart, cashier, and inventory, working on Main framework + debugging all 4 classes

@@ -1,0 +1,44 @@
+Andy: Use this .txt file to communicate in general, and type your name at the beginning of messages; use threads if necessary to bring attention to a certain part in your code (also please let me know if you guys recieve notifications when i type in here; otherwise we'll need to devise a new method of communication)
+
+YO! WASSUP?!? 
+
+I'm thinking that we could just create a logs.txt and then document the times at which we're working in there and also what we did at that time
+
+Eddie: That's actually a really good idea
+
+Andy: ok so now we just need to figure out what we're doing for our project lol
+
+Eddie: So, it has to replicate a real life project for a real life client. How about a grocery store, with an inventory class, a buying and selling class
+
+Actually, idk about that idea
+A text-based kinda game could work, I'm not really willing to invest time in graphics tho, so it would have to be completely text based
+
+Jeremy: so it'll allow the user to pick a variety of items, which will all have different prices and such?
+
+Eddie: Ya, and there can be enemies and stuff, which can all have certain characteristics 
+
+Andy: So are we going to do grocery store thing, or are we trying a text based game. 
+
+Eddie: I think the game is better, and more fun.
+ 
+Riyan: what type of game we thinking?
+
+Andy: Do you guys have discord :D this is getting kind of annoying
+
+Eddie: Maybe a survival-type game
+?
+Jeremy: so sorta like that example video where you can choose different weapons and use them to eliminate different creatures
+does anyone wanna hop on a discord call 
+Riyan: Discord tag(Phoenix#6336)
+Jeremy: Discord tag(NotFunnyJer#4048)
+
+Eddie: I would but can't right now
+
+Jeremy: no worries
+Andy: I think it would still be beneficial to have an actual chat instead of... whatever the hell this is
+
+Eddie: lol, tru
+
+Andy: The problem is in this case we'd probably spend like 90% of our time thinking of rules/whatnot instead of actually coding
+
+Eddie: Another problem with the game idea is there has to be some sort of story-line, so that we know where it all leads to. 
