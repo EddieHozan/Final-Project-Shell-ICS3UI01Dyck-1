@@ -56,24 +56,16 @@ public class Receipt {
     // }
     
     void printReceipt(Cart cart) {
-        System.out.format("\n%-10s%-10s\n", "Item", "Cost");
-        System.out.format("--------------------\n");
+        System.out.format("\n%-10s%-8s\n", "Item", "Cost");
+        System.out.format("------------------\n");
         int i = 0;
         for(String key : cart.keySet()) {
-            System.out.format("%-10s%-1s%-9.2f\n", key, "$", dItemPrices.get(i));
+            System.out.format("%-10s%-1s%-7.2f\n", key, "$", dItemPrices.get(i));
             i++;
         }
-        System.out.format("--------------------\n");
-        System.out.format("Grand total: %.2f", dGrandTotal);
+        System.out.format("------------------\n");
+        System.out.format("%-13s%-1s%-4.2f\n", "Total: ", "$", dGrandTotal);
+        System.out.format("%-13s%-1s%-4.2f\n", "HST: ", "$", dGrandTotal * 0.05);
+        System.out.format("%-13s%-1s%-4.2f\n", "Grand Total: ", "$", dGrandTotal * 1.05);
     }
 }
-    // Write Receipt
-    // void writeReceipt() throws IOException {
-    //     PrintWriter fileOut = new PrintWriter(new FileWriter("Receipt.txt"));
-    //     for (int i = 0; i < sItemNames.size(); i++) {
-    //         fileOut.println(sItemNames.get(i) + " = " + dItemPrices.get(i));
-    //     }
-    //     fileOut.close();
-    // }
-//}
-//}

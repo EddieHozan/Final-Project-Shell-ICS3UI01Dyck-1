@@ -19,12 +19,12 @@ class Main {
             
 
             while (emptyCart == -1) {
-                System.out.println("Please input what item you would like to buy!");
+                System.out.println("Please input what item you would like to buy!\n");
                 emptyCart = cashier.buy();
             }
 
             while(true) {
-                System.out.println("Please choose from the following actions: 'buy', 'return', 'check cart', or 'checkout'."); 
+                System.out.println("Please choose from the following actions: 'buy', 'return', 'check cart', or 'checkout'.\n"); 
                 String sBuyOrReturn = scan.nextLine();
                 if(sBuyOrReturn.equalsIgnoreCase("buy")) {
                     cashier.buy();
@@ -38,7 +38,7 @@ class Main {
                         "2. Check the combined price of one item in your cart.\n" + 
                         "3. Check the unit price of one item in your cart.\n" + 
                         "4. List the items in your cart.\n" + 
-                        "5. Go back to choose a different action."); 
+                        "5. Go back to choose a different action.\n"); 
                         if(scan.hasNextInt()) {
                             int userChoice = Integer.parseInt(scan.nextLine());
                             if(userChoice == 1) {
@@ -63,12 +63,12 @@ class Main {
                                 break;
                             }
                             else {
-                                System.out.println("Please pick one of the options.");
+                                System.out.println("Please pick one of the options.\n");
                             }
                         }
                         else {
                             String eatInput = scan.nextLine();
-                            break;
+                            System.out.println("Please input integer option from 1-5 next time.\n");
                         }
                     }
                 }
@@ -84,7 +84,7 @@ class Main {
                 checker = false;
             }
 	    }
-        System.out.println("Thank you for shopping at [Fictional Grocery Store]!");
+        System.out.println("Thank you for shopping at [Fictional Grocery Store]!\n");
         scan.close();
     }
 }
