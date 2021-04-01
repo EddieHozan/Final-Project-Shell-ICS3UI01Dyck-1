@@ -27,7 +27,7 @@ public class Inventory {
             while (scan.hasNext()) {
                 ItemInfo j = new ItemInfo();
                 String key = scan.nextLine().trim();
-                // System.out.println("Adding " + key + " to inventory");
+
                 this.inventory.put(key, j);
             }
             scan.close();

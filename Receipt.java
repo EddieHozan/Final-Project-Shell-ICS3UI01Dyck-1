@@ -56,16 +56,17 @@ public class Receipt {
     // }
     
     void printReceipt(Cart cart) {
-        System.out.format("\n%-13s%-8s\n", "Item", "Cost");
-        System.out.format("--------------------\n");
+        System.out.println("  FICTIONAL GROCERY\n" + "        STORE™\n" + "=====================");
+        System.out.format("%-14s%-8s\n", "Item", "Cost");
+        System.out.format("---------------------\n");
         int i = 0;
         for(String key : cart.keySet()) {
-            System.out.format("%-13s%-1s%-7.2f\n", key, "$", dItemPrices.get(i));
+            System.out.format("%-14s%-1s%-7.2f\n", key, "$", dItemPrices.get(i));
             i++;
         }
-        System.out.format("--------------------\n");
-        System.out.format("%-13s%-1s%4.2f\n", "Total:", "$", dGrandTotal);
-        System.out.format("%-13s%-1s%4.2f\n", "HST:", "$", dGrandTotal * 0.05);
-        System.out.format("%-13s%-1s%4.2f\n", "Grand Total:", "$", dGrandTotal * 1.05);
+        System.out.format("---------------------\n");
+        System.out.format("%-14s%-1s%4.2f\n", "Total:", "$", dGrandTotal);
+        System.out.format("%-14s%-1s%4.2f\n", "HST:", "$", dGrandTotal * 0.05);
+        System.out.format("%-14s%-1s%4.2f\n", "Grand Total:", "$", dGrandTotal * 1.05);
     }
 }

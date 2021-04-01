@@ -13,3 +13,4 @@ March 30th
 March 31st
 2:10 - 2:40 - Andy - fiddled with output of receipt; work will continue later
 11:00 - 12:00 - Andy - redid receipt output
+16:22 - Andy - finished off everything, no errors as far as I can tell. satisfied with end result, might work on making receipt output sexier
